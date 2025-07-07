@@ -28,7 +28,7 @@ PM interviews test your ability to think strategically, design products, analyze
 ### 📋 Product Strategy Questions
 **What they test:** Your ability to think strategically about product direction and communicate it effectively.
 
-📖 **[Read Full Guide](product-strategy-questions.md)**
+📖 **[Read Full Guide](Guides/product-strategy-questions.md)**
 
 **Common formats:**
 - "You're the PM for X, what should be the 3-year strategy?"
@@ -54,7 +54,7 @@ PM interviews test your ability to think strategically, design products, analyze
 ### 🎨 Product Design Questions
 **What they test:** Your ability to define what to build, solve customer problems, and create product requirements.
 
-📖 **[Read Full Guide](product-design-questions.md)**
+📖 **[Read Full Guide](Guides/product-design-questions.md)**
 
 **Common formats:**
 - Design a new product: "Design an app to buy wine"
@@ -79,7 +79,7 @@ PM interviews test your ability to think strategically, design products, analyze
 ### 📊 Analytical & Metrics Questions
 **What they test:** Your ability to work with data, define success metrics, and make data-driven decisions.
 
-📖 **[Read Full Guide](analytical-metrics-questions.md)**
+📖 **[Read Full Guide](Guides/analytical-metrics-questions.md)**
 
 **Types of analytical questions:**
 - **Estimation:** Market sizing, capacity planning
@@ -102,7 +102,7 @@ PM interviews test your ability to think strategically, design products, analyze
 ### 🔧 Technical Questions
 **What they test:** Your ability to collaborate with engineers and understand technical concepts.
 
-📖 **[Read Full Guide](technical-questions.md)**
+📖 **[Read Full Guide](Guides/technical-questions.md)**
 
 **Common types:**
 - **System Design:** "Design a web crawler"
@@ -122,7 +122,7 @@ PM interviews test your ability to think strategically, design products, analyze
 ### ⚡ Product Execution Questions
 **What they test:** Day-to-day PM skills like problem diagnosis, prioritization, and stakeholder management.
 
-📖 **[Read Full Guide](product-execution-questions.md)**
+📖 **[Read Full Guide](Guides/product-execution-questions.md)**
 
 **Common formats:**
 - Problem diagnosis: "Traffic dropped 30%, investigate why"
@@ -138,7 +138,7 @@ PM interviews test your ability to think strategically, design products, analyze
 ### 💬 Behavioral Questions
 **What they test:** Your past experience, leadership skills, and cultural fit.
 
-📖 **[Read Full Guide](behavioral-questions.md)**
+📖 **[Read Full Guide](Guides/behavioral-questions.md)**
 
 **Types:**
 - **Pitch:** "Tell me about yourself"
