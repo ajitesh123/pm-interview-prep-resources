@@ -177,7 +177,8 @@ The COVID-19 pandemic accelerated cloud adoption and made infrastructure a strat
 
 ---
 
-[Practice on Tough Tongue AI](https://app.toughtongueai.com/run/pm-interview-strategy-apple-cloud-infrastructure-6854064a4a476c7f974541c1/)
+[Practice this case on Tough Tongue AI](https://app.toughtongueai.com/run/pm-interview-strategy-apple-cloud-infrastructure-6854064a4a476c7f974541c1/)
+
 ---
 
 ## Case Study 2: Apple's Search Engine Dilemma
@@ -379,7 +380,9 @@ Apple has quietly been building search capabilities - job postings reveal a sear
 The European Union's Digital Markets Act and increasing privacy regulations create favorable conditions for Apple's privacy-first approach. The success of DuckDuckGo (though still small) proves demand exists for privacy-focused search alternatives.
 
 ---
-[Practice on Tough Tongue AI](https://app.toughtongueai.com/library/pm-interview-strategy-apple-search-engine-686623530462f6c03102b4d7/)
+
+[Practice this case on Tough Tongue AI](https://app.toughtongueai.com/library/pm-interview-strategy-apple-search-engine-686623530462f6c03102b4d7/)
+
 ---
 
 ## Case Study 3: Netflix Ad-Supported Tier Decision
@@ -562,7 +565,9 @@ Netflix's actual launch in November 2022 closely followed optimal strategy princ
 The broader industry trend showed advertising becoming essential for streaming profitability as content costs escalated and subscriber acquisition costs increased. Warner Bros. Discovery, Paramount+, and Apple TV+ all followed with ad-supported options, validating the strategic necessity.
 
 ---
-[Practice on Tough Toungue AI](https://app.toughtongueai.com/library/pm-interview-netflix-ad-supported-tier-decision-685bfacdfeddee7fe2e607ef/)
+
+[Practice this case on Tough Tongue AI](https://app.toughtongueai.com/library/pm-interview-netflix-ad-supported-tier-decision-685bfacdfeddee7fe2e607ef/)
+
 ---
 
 ## Case Study 4: Meta's Metaverse Investment Strategy
