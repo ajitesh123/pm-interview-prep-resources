@@ -783,6 +783,10 @@ The parallel with Google Glass is instructive - promising technology that arrive
 
 ---
 
+[Practice this on Tough Tongue AI](https://app.toughtongueai.com/library/pm-interview-meta-s-metaverse-investment-686c9444382d0adca55b846e/)
+
+---
+
 ## Case Study 5: Spotify's Podcast Strategy Investment
 
 ### Question
@@ -974,6 +978,10 @@ The broader context includes rising music licensing costs eating into Spotify's 
 Apple's response was notably restrained - rather than engaging in an exclusive content war, Apple focused on improving Apple Podcasts' features and maintaining its position as the default platform. This suggested that platform quality and accessibility might matter more than exclusive content.
 
 The 2023-2024 period saw several high-profile exclusive podcasts return to open distribution, indicating that audience reach often matters more than platform exclusivity for podcast success.
+
+---
+
+[Practice this case on Tough Tongue AI](https://app.toughtongueai.com/library/pm-interview-strategy-spotify-podcast-investment-686c9996382d0adca55b847a/)
 
 ---
 
@@ -1192,6 +1200,10 @@ Google's response with Google Assistant and Apple's Siri improvements intensifie
 The COVID-19 pandemic accelerated smart home adoption but also highlighted voice AI limitations - complex queries still required screen interfaces, and privacy concerns grew as people worked from home. Amazon's 2022 layoffs in Alexa division signaled strategic reconsideration of the massive investment.
 
 The enterprise market showed more promise, with Alexa for Business gaining traction in hotels, offices, and healthcare settings where voice interfaces solve specific workflow problems and command premium pricing.
+
+---
+
+[Practice this case on Tough Tongue AI](https://app.toughtongueai.com/library/pm-interview-amazon-alexa-monetization-strategy-686c9f2c382d0adca55b848e/)
 
 ---
 
