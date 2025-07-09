@@ -1,541 +1,315 @@
-# Pricing Questions - Comprehensive Guide
+# Pricing Questions - Strategic Framework Guide
 
 ## Overview
-Pricing questions test your ability to balance customer value, competitive dynamics, and business objectives. This guide covers pricing strategy frameworks and detailed approaches for PM interviews.
+Pricing questions are fundamentally strategy questions that test your ability to balance customer value, competitive dynamics, and business objectives. Following the book's framework, we'll use the "Why, What, How" approach with decision-making principles.
 
 ---
 
-## Pricing Strategy Framework
+## Strategic Framework for Pricing
 
-### The PRICE Method™
+### The "Why, What, How" Approach
 
-**P** - Position in market (premium/value/penetration)
-**R** - Reference pricing (competitors, substitutes)
-**I** - Internal economics (costs, margins, goals)
-**C** - Customer willingness to pay
-**E** - Elasticity and segmentation
+As outlined in the book for strategy questions, pricing decisions should follow:
 
-### Key Pricing Concepts
+1. **Why**: Analyze market forces to understand pricing context
+   - Customer willingness to pay
+   - Competitive pricing landscape
+   - Company cost structure and goals
+   - Market trends affecting pricing
 
-1. **Value-Based Pricing**: Price based on customer perceived value
-2. **Cost-Plus Pricing**: Cost + desired margin
-3. **Competitive Pricing**: Based on competitor prices
-4. **Dynamic Pricing**: Varies by time, demand, segment
-5. **Freemium/Tiered**: Multiple price points for different needs
+2. **What**: Define pricing strategy and objectives
+   - Revenue optimization vs. market share
+   - Value proposition alignment
+   - Strategic positioning
+
+3. **How**: Develop pricing options and evaluate
+   - Generate multiple pricing options
+   - Define evaluation criteria
+   - Make recommendation with trade-offs
+
+### Decision-Making Framework
+
+Following the book's approach to strategic decisions:
+1. **Generate Options**: Create 3-4 distinct pricing strategies
+2. **Define Criteria**: Based on strategic goals
+3. **Evaluate Trade-offs**: Assess each option against criteria
+4. **Recommend**: Choose best option acknowledging risks
 
 ---
 
 # Question 1: How would you price the Kindle Fire HD?
 
-## Strategic Context
+## Following the Strategic Framework
 
-### Step 1: Clarify Business Objectives (1-2 minutes)
+### Step 1: Clarify Strategic Context (2 minutes)
 
 **Key Questions:**
-- "What's our primary goal - market share, profit, or ecosystem lock-in?" → *Ecosystem lock-in*
-- "Are we willing to lose money on hardware?" → *Yes, if we recoup through content*
-- "Target segment - everyone or specific group?" → *Mass market with focus on Prime members*
-- "Time horizon for profitability?" → *3-year customer lifetime*
+- "What's our primary strategic goal?" → *Ecosystem lock-in and content revenue*
+- "Investment timeline?" → *3-year customer lifetime*
+- "Target segment?" → *Mass market with focus on Prime members*
 
-### Step 2: Understand the Product
+### Step 2: Why - Analyze Market Forces (5-7 minutes)
 
-**Kindle Fire HD Specifications:**
-- 7-inch HD display (higher res than iPad Mini)
-- Access to Amazon content ecosystem
-- Prime Video, Kindle books, Apps
-- Deeply integrated with Amazon services
+**Customer Analysis:**
+- Non-iPad users see $200 as psychological threshold
+- Prime members show 50% higher willingness to pay
+- Parents value kid-friendly features (+$30 perceived value)
 
-**Strategic Role:**
-- Gateway to Amazon digital content
-- Defensive play against Apple/Google
-- Prime membership driver
+**Competition Analysis:**
+- iPad Mini at $329 (premium positioning)
+- Nexus 7/Galaxy Tab at $199 (value positioning)
+- Market has established $199 as standard for 7" tablets
 
-### Step 3: Analyze Pricing Factors
+**Company Analysis:**
+- Hardware cost: $174 (BOM + manufacturing + shipping)
+- Ecosystem revenue potential: $248 margin over 3 years
+- Strategic goal: Drive Prime memberships and content sales
 
-#### A. Competitive Landscape
+**Market Trends:**
+- Shift from hardware profits to ecosystem monetization
+- Increasing importance of content libraries
+- Growing comfort with ad-supported models
 
-| Device | Price | Screen | Ecosystem | Market Position |
-|--------|-------|--------|-----------|-----------------|
-| iPad Mini | $329 | 7.9" | iTunes/App Store | Premium |
-| Nexus 7 | $199 | 7" | Google Play | Value |
-| Galaxy Tab | $199 | 7" | Google Play | Value |
+### Step 3: What - Define Pricing Strategy (3-5 minutes)
 
-**Key Insight**: $199 is the psychological price point for 7" tablets
+**Strategic Objective**: Use hardware as a gateway to high-margin digital content ecosystem
 
-#### B. Cost Structure Analysis
+**Pricing Philosophy**: "Razor and blades" model - break even or loss on hardware, profit on content
 
-**Hardware Costs (from iSuppli teardown):**
-- Bill of Materials: $137
-- Manufacturing: $20
-- Shipping/Packaging: $17
-- **Total Cost**: $174
+**Success Criteria**:
+1. Maximize ecosystem attach rate (>60%)
+2. Drive Prime conversions (>30% of buyers)
+3. Achieve profitability within 18 months per customer
 
-**Break-even Analysis:**
-```
-Hardware Loss at Various Price Points:
-$149: Loss of $25
-$174: Break-even
-$199: Profit of $25
-$229: Profit of $55
-```
+### Step 4: How - Generate and Evaluate Options (10 minutes)
 
-#### C. Customer Willingness to Pay
+#### Option Generation
 
-**Research Insights:**
-- Non-iPad users see $200 as tablet threshold
-- Prime members willing to pay $50 more
-- Parents value kid-friendly features (+$30)
-
-**Price Sensitivity Curve:**
-```
-Price    Demand Index
-$149     100 (baseline)
-$174     85
-$199     70
-$229     45
-$249     25
-```
-
-#### D. Ecosystem Economics
-
-**Lifetime Value Analysis:**
-```
-Average Customer (3 years):
-- Digital content: $150/year × 3 = $450
-- Physical goods uplift: $200/year × 3 = $600
-- Prime membership: 60% convert × $139 = $83
-Total LTV from ecosystem: $1,133
-
-Margins:
-- Digital content: 30% = $135
-- Physical goods: 5% = $30
-- Prime: 100% = $83
-Total Margin: $248
-```
-
-### Step 4: Pricing Strategy Options
-
-#### Option 1: Penetration Pricing ($149)
-**Strategy**: Maximum market share
-
-**Pros:**
-- Beats all competitors significantly
-- Drives massive adoption
-- Creates switching costs
-
-**Cons:**
+**Option A: Aggressive Penetration ($149)**
 - $25 loss per unit
-- Sets low price expectation
-- Requires high content attach rate
+- Maximum market share capture
+- Highest ecosystem potential
 
-**5-Year Projection:**
-```
-Units Sold: 50M
-Hardware Loss: -$1.25B
-Ecosystem Profit: +$6.2B
-Net Profit: $4.95B
-```
-
-#### Option 2: Competitive Parity ($199)
-**Strategy**: Match Nexus 7 price
-
-**Pros:**
+**Option B: Competitive Parity ($199)**
 - Break-even on hardware
-- Credible vs competition
-- Flexibility for promotions
+- Match competitor pricing
+- Balanced approach
 
-**Cons:**
-- No price differentiation
-- Relies on Amazon brand
+**Option C: Tiered Strategy ($174/$199)**
+- $174 with ads (our cost)
+- $199 without ads
+- Choice architecture benefits
 
-**5-Year Projection:**
-```
-Units Sold: 30M
-Hardware Profit: +$750M
-Ecosystem Profit: +$3.7B
-Net Profit: $4.45B
-```
+**Option D: Premium Positioning ($229)**
+- $55 profit per unit
+- Focus on quality perception
+- Lower volume, higher margin
 
-#### Option 3: Value Pricing ($174)
-**Strategy**: "Razor and blades" model
+#### Evaluation Criteria (Based on Strategic Goals)
 
-**Pros:**
-- Undercuts competition
-- Break-even on hardware
-- Clear value message
+1. **Ecosystem Revenue Potential** (40% weight)
+2. **Market Share Impact** (30% weight)
+3. **Prime Membership Drive** (20% weight)
+4. **Risk Level** (10% weight)
 
-**Cons:**
-- Odd price point
-- Might signal lower quality
+#### Evaluation Matrix
 
-**5-Year Projection:**
-```
-Units Sold: 40M
-Hardware Profit: $0
-Ecosystem Profit: +$4.9B
-Net Profit: $4.9B
-```
+| Option | Ecosystem | Market Share | Prime Drive | Risk | Score |
+|--------|-----------|--------------|-------------|------|-------|
+| A: $149 | Excellent (10) | Excellent (10) | High (8) | High (-8) | 8.8 |
+| B: $199 | Good (7) | Good (7) | Medium (6) | Low (-3) | 6.8 |
+| C: Tiered | Excellent (9) | Excellent (9) | High (8) | Low (-2) | 8.7 |
+| D: $229 | Poor (3) | Poor (3) | Low (3) | Medium (-5) | 3.0 |
 
-### Step 5: Segmentation Strategy
+### Step 5: Strategic Recommendation
 
-**Prime Member Pricing:**
-- Regular Price: $199
-- Prime Price: $159 (or bundled free with 2-year Prime)
-- Drives Prime subscriptions
+**Recommended Strategy: Option C - Tiered Pricing**
 
-**Educational Pricing:**
-- Student Discount: $149
-- Bulk Education: $129
-- Builds future customers
-
-### Step 6: Dynamic Pricing Tactics
-
-**Launch Strategy:**
-1. Month 1-2: $199 (establish value)
-2. Month 3: Prime Day special at $159
-3. Month 4-6: $179 with ads
-4. Black Friday: $149 doorbuster
-5. Steady state: $199/$179 with ads
-
-### Recommendation: $174 with Tiered Strategy
-
-**Core Pricing:**
-- **Without Ads**: $199 (matches competition)
-- **With Ads**: $174 (our cost)
-- **Prime Members**: $159 (drives subscriptions)
-- **Black Friday**: $139 (loss leader)
+**Core Pricing Structure:**
+- With Ads: $174 (matches our cost)
+- Without Ads: $199 (competitive parity)
+- Prime Members: Additional $15 discount
 
 **Why This Works:**
-
-1. **Psychology**: Under $200 barrier
-2. **Flexibility**: Multiple price points
-3. **Profitability**: Break-even+ on most sales
-4. **Competition**: Undercuts everyone
-5. **Ecosystem**: Maximizes content attach
+1. **Maximizes ecosystem entry** while maintaining flexibility
+2. **Psychology of choice** makes $174 feel like a deal
+3. **Covers costs** on average across mix
+4. **Drives Prime** through member benefits
 
 **Implementation Roadmap:**
+- Launch at $199 to establish value perception
+- Introduce ad-supported tier at month 3
+- Prime pricing at month 6
+- Seasonal promotions to $149
 
-**Phase 1 (Launch)**: Start at $199 to establish value
-**Phase 2 (Month 3)**: Introduce ad-supported at $174
-**Phase 3 (Month 6)**: Prime member pricing
-**Phase 4 (Year 2)**: Refine based on attach rates
-
-### Expected Outcomes
-
-**Year 1:**
-- Units: 8M
-- Hardware Revenue: $1.4B
-- Hardware Margin: -$40M
-- Ecosystem Revenue: $320M
-- Total Profit: $280M
-
-**3-Year View:**
-- Cumulative Units: 35M
-- Total Profit: $2.8B
-- ROI: 400%+
+**Expected Outcomes:**
+- Year 1: 8M units, $280M total profit
+- 70% choose ad-supported version
+- 40% Prime conversion rate
+- 18-month payback per customer
 
 ---
 
 # Question 2: Amazon Prime Pricing Analysis
 
 ## Question
-"The VP wants to lower Amazon Prime from $79.99 to $69.99 per year. Develop financial projections for this decision."
+"The VP wants to lower Amazon Prime from $79.99 to $69.99 per year. Should we do it?"
 
-### Step 1: Current State Analysis
+### Step 1: Clarify Strategic Context
 
-**Prime Program Overview:**
-- Current Price: $79.99/year
-- Estimated Members: 20M (at time of case)
-- Current Revenue: $1.6B/year
+**Key Questions:**
+- What's driving this proposal? → *Growth has slowed, seeking new members*
+- Current member satisfaction? → *High (85% renewal rate)*
+- Competitive pressure? → *Walmart+ launching at $98/year*
 
-**Member Benefits:**
-- Free 2-day shipping (all orders)
-- Prime Video streaming
-- Prime Music (limited)
-- Kindle Lending Library
-- Early access to deals
+### Step 2: Why - Analyze Market Forces
 
-### Step 2: Understand Price Change Impact
+**Customer Analysis:**
+- Current members: 20M highly satisfied
+- Price-sensitive prospects: 10-15M potential
+- Elasticity estimate: -1.2 (12.5% price drop → 15% volume gain)
 
-**Direct Revenue Impact:**
+**Competition Analysis:**
+- Costco: $60/year (different model)
+- Walmart+: Planning $98/year
+- No direct comparable service
+
+**Company Analysis:**
+- Current profit per member: $300/year (shopping behavior)
+- Shipping costs: $360/year per member
+- Breakeven through shopping margin
+
+**Market Trends:**
+- Subscription fatigue emerging
+- Price consciousness increasing
+- Expectation of bundle value rising
+
+### Step 3: What - Define Strategic Options
+
+**Strategic Question**: How do we grow Prime membership while maintaining profitability?
+
+**Success Criteria:**
+1. Net profit impact (must be positive within 2 years)
+2. Member growth (target 30M members)
+3. Competitive positioning maintained
+
+### Step 4: How - Generate and Evaluate Options
+
+#### Option Generation
+
+**Option A: Lower to $69.99 (as proposed)**
+- Simple price cut across the board
+- 12.5% reduction
+
+**Option B: Maintain $79.99 with Enhanced Value**
+- Add more benefits instead of cutting price
+- Invest in content, faster delivery
+
+**Option C: Segmented Pricing**
+- Students: $39
+- Seniors: $59  
+- Regular: $79.99
+- Family: $119
+
+**Option D: New Entry Tier**
+- Prime Lite: $49 (limited benefits)
+- Prime Classic: $79.99
+- Prime Plus: $119 (additional benefits)
+
+#### Financial Analysis Framework
+
+For each option, calculate:
+1. Member growth projection
+2. Revenue impact
+3. Cost impact (shipping, content)
+4. 3-year NPV
+
+#### Detailed Analysis: Option A ($69.99)
+
+**Year 1 Impact:**
 ```
-Current: 20M members × $79.99 = $1,599.8M
-New: 20M members × $69.99 = $1,399.8M
-Revenue Loss: -$200M/year (12.5% decrease)
-```
+Membership Revenue:
+- Old: 20M × $80 = $1,600M
+- New: 23M × $70 = $1,610M
+- Delta: +$10M
 
-**But this is just the beginning...**
+Shopping Profit:
+- Existing: 20M × $300 = $6,000M
+- New members: 3M × $200 = $600M
+- Total: $6,600M
 
-### Step 3: Elasticity Analysis
+Costs:
+- Shipping increase: 3M × 40 orders × $8 = $960M
+- Content costs: $150M
+- Net Impact: -$1,100M
 
-**Price Elasticity Estimation:**
-
-Based on similar subscription services:
-- Netflix: -0.8 elasticity
-- Costco: -0.6 elasticity
-- Amazon Prime (estimated): -1.2 elasticity
-
-**Why Higher Elasticity?**
-- Lower price point (vs Costco)
-- More substitutes available
-- Value prop varies by user
-
-**New Member Calculation:**
-```
-% Price Change: -12.5%
-Elasticity: -1.2
-% Quantity Change: 12.5% × 1.2 = 15%
-New Members: 20M × 1.15 = 23M
-```
-
-### Step 4: Comprehensive Financial Model
-
-#### A. Membership Revenue
-```
-New Membership Revenue: 23M × $69.99 = $1,609.8M
-Previous Revenue: $1,599.8M
-Net Gain: +$10M
-```
-
-#### B. Incremental Shopping Behavior
-
-**Current Prime Member Behavior:**
-- Annual Spend: $1,200
-- Orders per Year: 60
-- Gross Margin: 25%
-- Profit per Member: $300
-
-**New Member Profile (Price-Sensitive):**
-- Annual Spend: $800 (33% less)
-- Orders per Year: 40
-- Same Gross Margin: 25%
-- Profit per Member: $200
-
-**Shopping Profit Impact:**
-```
-Existing Members: 20M × $300 = $6.0B
-New Members: 3M × $200 = $0.6B
-Total Shopping Profit: $6.6B
-```
-
-#### C. Shipping Cost Analysis
-
-**Current State:**
-- Average Shipping Cost: $8/order
-- Prime Orders: 20M × 60 = 1.2B orders
-- Total Shipping: $9.6B
-- Non-Prime Revenue: $2.4B (they pay)
-- Net Shipping Cost: $7.2B
-
-**New State:**
-- Existing Orders: 1.2B × $8 = $9.6B
-- New Member Orders: 3M × 40 × $8 = $960M
-- Total Shipping: $10.56B
-- Non-Prime Revenue: $2.0B (less non-Prime)
-- Net Shipping Cost: $8.56B
-- **Increase: $1.36B**
-
-#### D. Content & Services Impact
-
-**Video Streaming:**
-- Cost per Member: $50/year
-- New Members: 3M
-- Additional Cost: $150M
-
-**Music & Other Services:**
-- Cost per Member: $10/year
-- Additional Cost: $30M
-
-**Total Content Cost:** $180M
-
-#### E. Lifetime Value Consideration
-
-**Churn Analysis:**
-- Current Price Churn: 15%/year
-- Lower Price Churn: 12%/year (estimated)
-- Retention Improvement: 3%
-
-**LTV Calculation:**
-```
-Current LTV: $300 / 0.15 = $2,000
-New LTV: $200 / 0.12 = $1,667
-Blended LTV: (20M × $2,000 + 3M × $1,667) / 23M = $1,957
+Year 1 Result: -$1,090M
 ```
 
-### Step 5: Competitive Response
+**3-Year Projection:**
+- Break-even requires 40% member growth
+- Unlikely given elasticity estimates
+- Creates dangerous precedent
 
-**Walmart+ Implications:**
-- Currently $98/year
-- Might lower to $59 to undercut
-- Could trigger price war
+#### Evaluation Matrix
 
-**Target/Best Buy:**
-- May launch competing services
-- Further fragmenting market
+| Option | Profit Impact | Growth | Risk | Feasibility | Score |
+|--------|--------------|--------|------|-------------|-------|
+| A: Cut Price | Very Negative | Medium | High | Easy | 2/10 |
+| B: Add Value | Neutral | Low | Low | Medium | 6/10 |
+| C: Segments | Positive | High | Medium | Hard | 8/10 |
+| D: Tiers | Positive | High | Low | Medium | 9/10 |
 
-### Step 6: Strategic Considerations
+### Step 5: Strategic Recommendation
 
-**Positive Factors:**
-1. **Market Expansion**: Reaches price-sensitive segment
-2. **Network Effects**: More Prime = better for sellers
-3. **Data Value**: 3M new customers' shopping data
-4. **Ecosystem Lock-in**: Harder to leave at lower price
+**Recommendation: Option D - Tiered Pricing Strategy**
 
-**Risk Factors:**
-1. **Brand Perception**: May seem less premium
-2. **Anchor Pricing**: Hard to raise later
-3. **Margin Pressure**: Less room for benefits expansion
-4. **Competitive Response**: Price war risk
+**Why Not Lower Price:**
+1. Massive Year 1 loss (-$1.1B)
+2. Difficult to raise prices later
+3. Better alternatives available
 
-### Financial Summary
+**Recommended Approach:**
+1. **Prime Lite ($49)**
+   - Free shipping (5-day)
+   - Limited video content
+   - Target price-sensitive segment
 
-#### Year 1 Projection
-```
-Revenue Changes:
-+ Membership Revenue: +$10M
-+ Shopping Profit (new): +$600M
-- Shipping Costs: -$1,360M
-- Content Costs: -$180M
-Net Impact: -$930M
-```
+2. **Prime Classic ($79.99)**
+   - Current benefits maintained
+   - Protect base revenue
 
-#### Year 3 Projection (with growth)
-```
-Members: 30M (30% growth)
-Revenue Changes:
-+ Membership Revenue: +$500M
-+ Shopping Profit: +$2.1B
-- Shipping Costs: -$2.2B
-- Content Costs: -$300M
-Net Impact: +$100M
-```
+3. **Prime Plus ($119)**
+   - Same-day delivery
+   - Full content library
+   - Grocery delivery
 
-### Recommendation: NO - Don't Lower Price
-
-**Key Reasons:**
-
-1. **Massive Year 1 Loss**: -$930M impact
-2. **Break-even Requires**: 50% member growth
-3. **Irreversible Decision**: Can't raise price easily
-4. **Better Alternatives Available**:
-   - Student Prime at $39
-   - Monthly option at $12.99
-   - Prime Day promotions
-   - Targeted discounts
-
-**Alternative Recommendation:**
-
-Instead of lowering price:
-1. **Segment-Specific Pricing**:
-   - Students: $39
-   - Seniors: $59
-   - Low-Income: $5.99/month
-
-2. **Enhance Value**:
-   - Add more content
-   - Expand same-day delivery
-   - Include more services
-
-3. **Payment Options**:
-   - Monthly: $7.99
-   - Quarterly: $24.99
-   - Annual: $79.99
-
-### Model Sensitivity Analysis
-
-**Key Assumptions to Monitor:**
-- Elasticity (-1.2): If only -0.8, lose $1.2B
-- New member spend ($800): If only $600, lose $1.1B
-- Churn improvement (3%): If only 1%, lose $200M
-
-**Break-Even Scenarios:**
-- Need 40% member growth (28M total)
-- OR new members spend $1,000/year
-- OR reduce shipping cost to $6/order
-- OR achieve 6% churn rate
-
-### Interview Answer Template
-
-"I'll analyze the proposed Prime price reduction from $80 to $70 annually by modeling revenue, cost, and strategic impacts.
-
-**Direct Impact:**
-Current revenue: 20M × $80 = $1.6B
-New revenue: 20M × $70 = $1.4B
-Loss: $200M
-
-**Member Growth:**
-With -1.2 price elasticity and 12.5% price cut, we'd gain 15% more members (3M), bringing total to 23M.
-
-**Full Financial Impact:**
-
-*Revenue gains:*
-- Membership: +$10M (net of price cut)
-- Shopping profit: +$600M (3M × $200 margin)
-
-*Cost increases:*
-- Shipping: -$1.36B (3M × 40 orders × $8)
-- Content: -$180M
-
-**Year 1 Net Impact: -$930M loss**
-
-**Recommendation: Don't lower price**
-
-The math doesn't work unless we achieve 40%+ member growth. Instead, I'd recommend targeted discounts (students, seniors) and enhanced value to justify current pricing.
-
-The $930M Year 1 loss is too steep, and raising prices later would be nearly impossible. Better to maintain price integrity and grow through segmentation."
+**Expected Results:**
+- Maintain base revenue
+- Add 5M Lite members
+- 10% upgrade to Plus
+- Net positive Year 1
 
 ---
 
-## Key Pricing Principles
+## Key Principles for Pricing Strategy
 
-### 1. Understand Your Pricing Power
-- Differentiation level
-- Switching costs
-- Competition intensity
-- Brand strength
+### 1. Always Start with "Why"
+- Understand market dynamics
+- Identify strategic objectives
+- Recognize constraints
 
-### 2. Consider Full Economics
-- Customer acquisition cost
-- Lifetime value
-- Ecosystem effects
-- Competitive response
+### 2. Generate Multiple Options
+- Never evaluate single option
+- Include creative alternatives
+- Consider segmentation
 
-### 3. Test and Iterate
-- A/B test prices
-- Monitor elasticity
-- Track competitive moves
-- Adjust dynamically
+### 3. Use Rigorous Evaluation
+- Define clear criteria
+- Quantify where possible
+- Acknowledge uncertainties
 
-### 4. Segment Strategically
-- Different prices for different values
-- Time-based discrimination
-- Channel-based pricing
-- Bundle strategically
-
-### 5. Communicate Value
-- Price anchoring
-- Framing effects
-- Loss aversion
-- Social proof
-
-### Common Pricing Mistakes to Avoid
-
-1. **Cost-Plus Myopia**: Ignoring customer value
-2. **Competitive Matching**: Without differentiation
-3. **Single Price**: Missing segmentation opportunities
-4. **Static Pricing**: Not adapting to market
-5. **Price Wars**: Racing to the bottom
-
-### Pricing Interview Framework
-
-1. **Clarify Objective** (30 seconds)
-2. **Analyze 4 Factors** (3 minutes):
-   - Competition
-   - Costs
-   - Customer WTP
-   - Company Goals
-3. **Develop Options** (2 minutes)
-4. **Model Financials** (2 minutes)
-5. **Recommend with Rationale** (1 minute)
-
-Remember: Great pricing captures value created, doesn't just cover costs. 
+### 4. Think Beyond Price
+- Value perception matters more than price
+- Consider competitive response
+- Plan for long-term positioning 

@@ -1,563 +1,380 @@
-# Metrics Questions - Comprehensive Guide
+# Metrics Questions - Analytical Framework Guide
 
 ## Overview
-Metrics questions test your ability to measure product success, identify leading indicators, and make data-driven decisions. This guide covers modern metrics frameworks and detailed approaches for PM interviews.
+Metrics questions test your ability to measure product success, identify leading indicators, and make data-driven decisions. Following the book's analytical framework, we'll use a systematic approach to define and evaluate metrics.
 
 ---
 
-## Core Metrics Frameworks
+## Analytical Framework for Metrics
 
-### 1. AARM Metrics™
-- **Acquisition**: Getting users in the door
-- **Activation**: First successful experience
-- **Retention**: Keeping users engaged
-- **Monetization**: Generating revenue
+### The Systematic Approach (from the book)
 
-### 2. The Three Loops™
-- **Data Loop**: Users adding content/information
-- **Compulsion Loop**: Habitual checking behavior
-- **Viral Loop**: Users inviting others
+As outlined in the book's analytical questions section, metrics should follow a structured approach:
 
-### 3. North Star Framework
-- One metric that captures core value
-- Leading indicator of long-term success
-- Aligns entire organization
+1. **Clarify Requirements**: Understand scope, goals, and constraints
+2. **Break Down Components**: Decompose the problem systematically  
+3. **Apply Analytical Rigor**: Use data-driven reasoning
+4. **Communicate Uncertainties**: Acknowledge limitations and assumptions
 
-### 4. Input vs Output Metrics
-- **Input**: What you can control (features shipped)
-- **Output**: Business results (revenue)
-- Focus on leading indicators
+### Decision-Making with Metrics
+
+Following the book's emphasis on goal-oriented decision making:
+1. **Align with Strategic Goals**: Metrics must connect to business objectives
+2. **Balance Multiple Perspectives**: Consider different metric types
+3. **Make Trade-offs Explicit**: Acknowledge what you're optimizing for
+4. **Plan for Action**: Metrics should drive decisions
 
 ---
 
-# Question 1: Metrics to Evaluate Product Success
+# Question 1: LinkedIn Testing Profile Photo in Signup
 
-## General Framework
+## Following the Analytical Framework
 
-### Step 1: Clarify Context (30 seconds)
-- Product type and stage
-- Business model
-- Key stakeholders
-- Time horizon
+### Step 1: Clarify Requirements (2 minutes)
 
-### Step 2: Define Success
-- Business objectives
-- User value proposition
-- Strategic goals
+**Key Questions:**
+- What's the strategic goal? → *Increase user activation and engagement*
+- Current signup flow? → *Photo upload happens after signup*
+- Test hypothesis? → *Earlier photo upload → better activation*
+- Time horizon for measurement? → *30-day activation window*
+
+### Step 2: Break Down the Problem
+
+**User Journey Components:**
+1. **Signup Funnel**
+   - Start → Basic Info → Photo (NEW) → Complete
+   
+2. **Activation Journey**
+   - Signup → Profile Completion → Connections → Engagement
+
+3. **Long-term Value**
+   - Activation → Retention → Monetization
+
+### Step 3: Develop Metrics Hierarchy
+
+#### Primary Success Metrics
+
+**1. Signup Completion Rate**
+```
+Definition: % completing signup with photo in flow
+Baseline: 50% (without photo)
+Target: >45% (acceptable drop-off)
+Why: Guardrail to ensure we don't break acquisition
+```
+
+**2. 7-Day Activation Rate**
+```
+Definition: % completing profile + 5 connections within 7 days
+Current: 25% 
+Target: 30%+ 
+Why: Leading indicator of long-term engagement
+```
+
+**3. Profile Quality Score**
+```
+Components:
+- Has photo (30%)
+- Has headline (20%)
+- Has summary (20%)
+- Has experience (30%)
+
+Why: Higher quality → more engagement
+```
+
+#### Supporting Metrics
+
+**Funnel Analysis:**
+```
+Start Signup: 100%
+  ↓
+Complete Basic Info: 85%
+  ↓
+Upload Photo: 60% (new step)
+  ↓
+Finish Signup: 50%
+```
+
+**Engagement Cascade:**
+- Photo uploaded → 2x profile views
+- Profile views → 1.5x connection requests
+- Connections → 3x return visits
+
+#### Guardrail Metrics
+
+1. **Drop-off Rate at Photo Step**: <25%
+2. **Support Tickets**: No increase in photo-related issues
+3. **Photo Quality**: >90% appropriate photos
+
+### Step 4: Statistical Analysis Plan
+
+**Hypothesis Testing:**
+- Null: No difference in activation between test/control
+- Alternative: Photo-in-signup increases 7-day activation
+- Required sample size: 15,000 per variant (power = 0.8)
+
+**Segmentation Analysis:**
+- By user type (student, professional, job seeker)
+- By platform (mobile vs. desktop)
+- By region (photo culture varies)
+
+**Time-based Analysis:**
+- Novelty effect monitoring (week 1 vs. week 4)
+- Cohort retention curves
+- Seasonal adjustments
+
+### Step 5: Decision Framework
+
+**Success Criteria:**
+1. Signup completion > 45% (minimum viable)
+2. 7-day activation lift > 3% (statistically significant)
+3. 30-day retention neutral or positive
+
+**Trade-off Evaluation:**
+```
+If signup drops to 45% but activation increases to 30%:
+- Lost users: 5% of top funnel
+- Gained activation: 5% absolute increase
+- Net impact: Positive (activated users more valuable)
+```
+
+**Recommendation Logic:**
+- If all criteria met → Full rollout
+- If activation positive but signup borderline → Iterate on UX
+- If signup < 40% → Reject change regardless of activation
+
+---
+
+# Question 2: Google+ Spaces Feature Metrics
+
+## Following the Analytical Framework
+
+### Step 1: Clarify Context
+
+**Feature Understanding:**
+- Real-time collaborative spaces for 2-50 people
+- Persistent workspaces with tools
+- Target: Work, education, hobbies
+
+**Strategic Goals:**
+1. Revive Google+ engagement
+2. Differentiate from competitors
+3. Build sustainable network effects
+
+### Step 2: Break Down Success Factors
+
+**Value Creation Chain:**
+```
+Space Created → Members Join → Activity Generated → Value Realized → Retention
+```
+
+**Key Behaviors to Measure:**
+1. Space creation and quality
+2. Member acquisition and engagement
+3. Collaboration effectiveness
+4. Network growth
+
+### Step 3: Develop Metrics Framework
+
+#### North Star Metric
+**Monthly Transacting Users** (create OR participate actively)
+- Why: Captures both sides of marketplace
+- Target: 50M by Month 12
+- Leading indicators: Space creation rate, join rate
+
+#### Layer 1: Adoption Metrics
+
+**1. Space Creation Funnel**
+```
+Discover Feature: 100%
+  ↓
+Start Creation: 30%
+  ↓
+Invite Members: 20%
+  ↓
+First Activity: 15%
+
+Quality Score = Members × Activity × Retention
+```
+
+**2. Space Health Score**
+```python
+health_score = (
+    (daily_active_members / total_members) * 0.3 +
+    (messages_per_member_per_day) * 0.2 +
+    (files_shared_per_member) * 0.2 +
+    (collaborative_actions / members) * 0.3
+)
+```
+
+#### Layer 2: Engagement Metrics
+
+**Activity Depth:**
+- Time in space per session
+- Number of spaces per user
+- Cross-space participation
+- Content creation rate
+
+**Collaboration Quality:**
+- Task completion rate
+- Decision velocity (polls resolved)
+- Knowledge artifacts created
+- Member satisfaction (in-space NPS)
+
+#### Layer 3: Network Effects
+
+**Viral Mechanics:**
+```
+K-factor = Invites_Sent × Accept_Rate × Activation_Rate
+Target: K > 1.2 for viral growth
+```
+
+**Network Density:**
+- Average connections per space
+- Cross-pollination rate
+- Discovery via shared members
+
+### Step 4: Implementation Plan
+
+**Phase 1 MVP Metrics (Months 1-3):**
+- Focus: Prove product-market fit
+- Key metrics: 30-day retention, space activation rate
+- Success: 35% spaces remain active after 30 days
+
+**Phase 2 Growth Metrics (Months 4-6):**
+- Focus: Scale and viral growth
+- Key metrics: K-factor, MAU growth rate
+- Success: 50% MoM growth sustained
+
+**Phase 3 Business Metrics (Months 7+):**
+- Focus: Monetization readiness
+- Key metrics: Power user %, platform dependency
+- Success: 10% willing to pay for premium
+
+### Step 5: Risk Monitoring
+
+**Quality Guardrails:**
+- Spam rate < 0.1%
+- Inappropriate content < 0.01%
+- Technical performance (latency < 200ms)
+
+**Ecosystem Health:**
+- Space abandonment rate
+- Creator burnout indicators
+- Platform concentration risk
+
+---
+
+# Question 3: How to Measure Success - General Framework
+
+## Systematic Approach to Metrics Definition
+
+### Step 1: Goal Clarification
+
+**Questions to Ask:**
+1. What's the product's strategic objective?
+2. Who are the target users?
+3. What behavior change do we seek?
+4. What's the business model?
+5. What's the competitive context?
+
+### Step 2: Map User Journey to Business Value
+
+**Value Creation Framework:**
+```
+Acquisition → Activation → Engagement → Retention → Monetization
+     ↓            ↓             ↓            ↓            ↓
+   Traffic    First Value   Habit Loop    Loyalty    Revenue
+```
 
 ### Step 3: Build Metrics Hierarchy
 
-```
-North Star Metric
-    ├── Driver Metrics
-    │   ├── Leading Indicators
-    │   └── Health Metrics
-    └── Guardrail Metrics
-        ├── Quality Metrics
-        └── Ecosystem Health
-```
+**Level 1: North Star**
+- Single metric capturing core value
+- Balances user and business value
+- Leading indicator of success
 
-## Example: LinkedIn Testing Profile Photo in Signup
+**Level 2: Input Metrics**
+- Driver metrics affecting North Star
+- Actionable by teams
+- More sensitive to changes
 
-### Context Understanding
-**Current State**: Photo upload after signup
-**Test**: Move photo upload into signup flow
-**Hypothesis**: Earlier photo → more engagement
+**Level 3: Guardrails**
+- Prevent unintended consequences
+- Protect user experience
+- Maintain platform health
 
-### Metrics Framework
+### Step 4: Apply HEART Framework
 
-#### 1. Primary Success Metrics
+Following Google's HEART framework mentioned in the book:
 
-**Signup Funnel**
-```
-Start Signup → Complete Basic Info → Upload Photo → Finish
-    ↓              ↓                    ↓            ↓
-   100%           85%                  60%          50%
+**H**appiness: User satisfaction (NPS, ratings)
+**E**ngagement: User activity (DAU, sessions)
+**A**doption: New user onboarding (activation rate)
+**R**etention: Continued usage (churn, resurrection)
+**T**ask Success: Feature effectiveness (completion rate)
 
-Key Metrics:
-- Signup Completion Rate (Primary)
-- Drop-off at Each Step
-- Time to Complete
-- Error Rates
-```
+### Example: E-commerce Mobile App
 
-**Activation Metrics**
-- % completing profile within 7 days
-- % adding 5+ connections in first week
-- % returning within 48 hours
+**Strategic Context:**
+- Goal: Increase mobile commerce share
+- Challenge: High cart abandonment
+- Opportunity: Personalization
 
-#### 2. Engagement Metrics (Post-Signup)
+**Metrics Definition:**
 
-**Profile Quality**
-```
-Quality Score = (
-    Has Photo × 0.3 +
-    Has Headline × 0.2 +
-    Has Summary × 0.2 +
-    Has Experience × 0.3
-)
-```
+**North Star**: Mobile Purchase Frequency
+- Definition: Purchases per active user per month
+- Current: 1.2
+- Target: 2.0
 
-**Activity Metrics**
-- Posts created per user
-- Comments/reactions per user
-- Profile views received
-- InMails sent
+**Driver Metrics:**
+1. Mobile conversion rate (2.5% → 3.5%)
+2. Average order value ($45 → $55)
+3. Browse-to-buy time (5 days → 3 days)
 
-#### 3. Network Effects
+**Guardrail Metrics:**
+1. Return rate (<15%)
+2. App crashes (<0.1%)
+3. Customer service contacts (stable)
 
-**Connection Metrics**
-- Invitations sent per user
-- Acceptance rate
-- Time to 10 connections
-- Connection velocity
-
-**Viral Coefficient**
-```
-K = (Invites Sent × Acceptance Rate × Signup Rate)
-If K > 1, viral growth
-```
-
-#### 4. Long-term Retention
-
-**Cohort Analysis**
-```
-Week    W1    W2    W4    W8    W12
-Cohort A 100%  45%   30%   25%   20%
-Cohort B 100%  55%   40%   35%   30%
-(B = with photo in signup)
-```
-
-**Resurrection Rate**
-- % dormant users who return
-- Triggered by photo visibility
-
-### Statistical Rigor
-
-**Sample Size Calculation**
-```python
-def calculate_sample_size(baseline_rate, min_effect, power=0.8, alpha=0.05):
-    # For 50% baseline, 5% lift, need ~15,000 per variant
-    return 2 * (baseline_rate * (1-baseline_rate)) * \
-           ((z_alpha + z_power) / min_effect) ** 2
-```
-
-**P-Value Interpretation**
-- p < 0.05: Statistically significant
-- Consider practical significance too
-- Watch for multiple testing issues
-
-### Decision Framework
-
-**Go/No-Go Criteria**
-1. Signup completion > -5% (guardrail)
-2. 7-day activation > +3% (success)
-3. Profile quality > +10% (success)
-4. No degradation in spam reports
-
-**Trade-off Analysis**
-```
-Benefit: +10% activation, +15% profile quality
-Cost: -8% signup completion
-Net Value: Positive if LTV gain > CAC increase
-```
+**Measurement Plan:**
+- A/B test all changes
+- Cohort analysis for retention
+- Segmentation by user type
+- Statistical significance required
 
 ---
 
-# Question 2: LinkedIn Feature + Metrics
-
-## Question
-"Suggest a killer feature to improve LinkedIn? What metrics would you track?"
-
-### Feature: AI Career Coach
-
-**Problem**: Professionals struggle with career progression decisions
-**Solution**: Personalized AI coach analyzing career paths and opportunities
-
-### Feature Details
-
-**Core Capabilities**:
-1. **Path Analysis**: Shows how others reached similar goals
-2. **Skill Gap Identification**: What you need to learn
-3. **Opportunity Matching**: Hidden job opportunities
-4. **Networking Suggestions**: Who to connect with
-5. **Learning Recommendations**: Courses and content
-
-### Comprehensive Metrics Strategy
-
-#### 1. Adoption Metrics
-
-**Funnel Analysis**
-```
-Feature Awareness → First Use → Setup Complete → Regular Use
-      ↓                ↓            ↓               ↓
-    100%              40%          25%             10%
-
-Target: 10% MAU penetration in 6 months
-```
-
-**User Segmentation**
-- By career stage (entry/mid/senior)
-- By industry
-- By engagement level
-- By job search status
-
-#### 2. Engagement Metrics
-
-**Core Usage**
-```python
-engagement_score = (
-    weekly_sessions * 0.3 +
-    actions_per_session * 0.3 +
-    time_spent * 0.2 +
-    features_used * 0.2
-)
-```
-
-**Feature-Specific Actions**
-- Career paths viewed
-- Skills assessments completed
-- Learning content engaged
-- Connections made from recommendations
-- Jobs applied through suggestions
-
-#### 3. Value Creation Metrics
-
-**User Value**
-- Self-reported career progress (NPS-style)
-- Skill additions to profile
-- Job changes within 6 months
-- Salary progression (survey data)
-
-**LinkedIn Value**
-- Incremental sessions per month
-- Premium subscription conversion
-- Learning course enrollment
-- Recruiter InMail response rates
-
-#### 4. Network Effects
-
-**Viral Metrics**
-```
-Referral Rate = Users who share insights / Total users
-Viral Actions:
-- "Share career path" clicks
-- Mentor connection requests
-- Success story posts
-```
-
-**Content Generation**
-- Career stories created
-- Advice given/received
-- Q&A participation
-
-#### 5. Business Impact
-
-**Revenue Metrics**
-- Premium conversion lift
-- Learning revenue increase
-- Recruiter product upsell
-- Job posting revenue
-
-**Ecosystem Health**
-- Overall platform engagement lift
-- User quality score improvement
-- Recruiter satisfaction scores
-
-### Measurement Plan
-
-#### Phase 1: MVP (Month 1-3)
-**Focus**: Adoption and basic engagement
-```
-Key Metrics:
-- Daily Active Users
-- Setup Completion Rate
-- First Value Moment (< 3 minutes)
-- 7-day Retention
-```
-
-#### Phase 2: Growth (Month 4-6)
-**Focus**: Depth of engagement
-```
-Key Metrics:
-- Actions per Session
-- Feature Adoption Ladder
-- User Value Score
-- Referral Rate
-```
-
-#### Phase 3: Maturity (Month 7+)
-**Focus**: Business impact
-```
-Key Metrics:
-- Revenue per User
-- LTV Impact
-- Platform Engagement Lift
-- Career Outcome Success Rate
-```
-
-### Success Definition
-
-**North Star**: Monthly Active Career Coaching Users
-
-**Success Criteria**:
-- 5M MAU within 12 months
-- 60% 30-day retention
-- 20% premium conversion
-- NPS > 50
-
-**Guardrails**:
-- No decrease in core engagement
-- Spam/quality reports < 0.1%
-- Server costs < $2/user/month
-
----
-
-# Question 3: Google+ Feature + Metrics
-
-## Question
-"What feature would you build to improve Google+? What metrics would you track?"
-
-### Feature: Real-Time Collaborative Spaces
-
-**Problem**: Google+ lacks differentiated, engaging experiences
-**Solution**: Virtual spaces where groups collaborate on projects in real-time
-
-### Feature Concept
-
-**"Google+ Spaces"**
-- Virtual rooms for 2-50 people
-- Real-time collaboration tools
-- Persistent shared workspace
-- Integration with Google Workspace
-
-**Use Cases**:
-1. Study groups collaborating on homework
-2. Startup teams building products
-3. Hobbyists working on projects
-4. Event planning committees
-5. Creative collaborations
-
-### Metrics Architecture
-
-#### 1. Space Creation & Adoption
-
-**Creation Funnel**
-```
-Discover Feature → Create Space → Invite Members → First Activity
-      100%            30%            20%             15%
-
-Targets:
-- 100K spaces created in Month 1
-- 1M spaces by Month 6
-```
-
-**Space Types Distribution**
-- Work: 40%
-- Education: 30%
-- Hobbies: 20%
-- Social: 10%
-
-#### 2. Engagement Depth
-
-**Space Activity Metrics**
-```python
-space_health_score = (
-    daily_active_members / total_members * 0.3 +
-    messages_per_day / members * 0.2 +
-    files_shared / members * 0.2 +
-    collaborative_edits / members * 0.3
-)
-```
-
-**Member Engagement**
-- Time spent in spaces/day
-- Number of spaces joined
-- Cross-space activity
-- Content creation rate
-
-#### 3. Collaboration Effectiveness
-
-**Output Metrics**
-- Projects completed
-- Documents created
-- Decisions made (polls/votes)
-- Knowledge artifacts generated
-
-**Quality Indicators**
-- Member satisfaction (in-space NPS)
-- Task completion rates
-- Return visit frequency
-- Space longevity
-
-#### 4. Network Growth
-
-**Viral Mechanics**
-```
-Growth Loop:
-Active Space → Visible Output → Discovery → Join/Create
-     ↓              ↓              ↓           ↓
-  More Value   Shared Outside   New Users   Network Effect
-```
-
-**Measurement**:
-- Spaces discovered through sharing
-- Join rate from external links
-- Member-to-member invites
-- Cross-pollination between spaces
-
-#### 5. Platform Impact
-
-**Google+ Revival Metrics**
-- Overall DAU/MAU increase
-- Session length improvement
-- User-generated content growth
-- Cross-product usage (Docs, Drive)
-
-**Competitive Differentiation**
-- Feature uniqueness score (vs Discord, Slack)
-- User preference surveys
-- Switching behavior analysis
-
-### Advanced Analytics
-
-#### Cohort Analysis
-```
-Space Cohort Analysis (30-day retention)
-Week 1 Spaces: 70% → 50% → 40% → 35%
-Week 2 Spaces: 72% → 53% → 43% → 38%
-Improvement shows product-market fit
-```
-
-#### Predictive Metrics
-```python
-def predict_space_success(space_data):
-    features = [
-        'members_in_first_24h',
-        'messages_in_first_week',
-        'file_uploads',
-        'member_diversity_score',
-        'creator_history'
-    ]
-    return ml_model.predict_survival(features)
-```
-
-### Experimentation Framework
-
-**A/B Tests Queue**:
-1. Onboarding flow variations
-2. Default space templates
-3. Discovery algorithms
-4. Notification strategies
-5. Gamification elements
-
-**Success Metrics by Test**:
-- Onboarding: Completion rate, time to value
-- Templates: Space activity levels
-- Discovery: Join rates, diversity
-- Notifications: Return rates, engagement
-- Gamification: Daily active rate
-
-### Business Model Metrics
-
-**Monetization Paths**:
-1. **Premium Spaces**: Advanced features
-2. **Storage Upgrades**: For active spaces
-3. **Enterprise Edition**: For companies
-
-**Revenue Metrics**:
-- Conversion to paid: 5% target
-- ARPU: $10/month
-- Churn: < 5% monthly
-- LTV/CAC ratio: > 3
-
-### Risk Metrics
-
-**Health Monitoring**:
-- Spam/abuse reports
-- Content policy violations
-- Server load per space
-- Storage growth rate
-
-**Mitigation Triggers**:
-- Abuse rate > 0.1%: Tighten permissions
-- Server cost > $5/space: Optimize architecture
-- Storage > 1GB/space: Implement limits
-
----
-
-## Meta-Framework: Choosing the Right Metrics
-
-### 1. Align with Strategy
-```
-Business Goal → User Value → Key Behavior → Metric
-
-Example:
-Revenue → Job Success → Apply to Jobs → Application Rate
-```
-
-### 2. Leading vs Lagging
-- **Leading**: Predictive of future success
-- **Lagging**: Confirms past success
-- Prefer leading indicators for faster iteration
-
-### 3. Actionable Metrics
-Good metrics are:
-- **Comparative**: A vs B clear
-- **Understandable**: Team gets it
-- **Ratio/Rate**: Not just counts
-- **Changeable**: You can impact it
-
-### 4. Avoid Vanity Metrics
-- Total registered users (vs active)
-- Page views (vs engagement)
-- Downloads (vs usage)
-- Gross revenue (vs margin)
-
-### 5. Counter-Metrics
-Always pair with guardrails:
-- Growth ↔ Quality
-- Engagement ↔ Spam
-- Revenue ↔ Churn
-- Speed ↔ Accuracy
-
-## Interview Success Formula
-
-### Structure Your Answer
-
-1. **Understand Context** (30s)
-   - Product goals
-   - User needs
-   - Business model
-
-2. **Define Success** (30s)
-   - North Star metric
-   - Key drivers
-   - Guardrails
-
-3. **Build Framework** (2min)
-   - AARM categories
-   - Leading indicators
-   - Counter-metrics
-
-4. **Get Specific** (2min)
-   - Exact metrics
-   - Targets/benchmarks
-   - Measurement plan
-
-5. **Consider Trade-offs** (1min)
-   - What you're optimizing for
-   - What you're willing to sacrifice
-   - How to balance
+## Key Principles for Metrics Success
+
+### 1. Start with Strategy
+- Metrics must connect to business goals
+- Understand the value chain
+- Define success before measuring
+
+### 2. Systematic Decomposition
+- Break complex goals into components
+- Identify leading vs. lagging indicators
+- Build logical relationships
+
+### 3. Balance Perspectives
+- User value AND business value
+- Short-term AND long-term
+- Growth AND quality
+
+### 4. Plan for Action
+- Metrics should drive decisions
+- Set targets and thresholds
+- Define escalation triggers
+
+### 5. Acknowledge Limitations
+- State assumptions clearly
+- Identify measurement gaps
+- Plan for iteration
 
 ### Common Pitfalls to Avoid
-
-1. **Too Many Metrics**: Focus on 3-5 key ones
-2. **Only Output Metrics**: Include leading indicators
-3. **No Targets**: Always suggest benchmarks
-4. **Ignoring Segments**: Different users, different metrics
-5. **Missing Trade-offs**: Every optimization has a cost
-
-### Closing Strong
-
-"To summarize, I'd focus on [North Star Metric] as our primary success indicator, driven by [2-3 key metrics]. We'd monitor [guardrail metrics] to ensure quality, and run experiments to improve [specific ratio]. Success looks like [specific target] within [timeframe], which would indicate [business value]." 
+- Vanity metrics without business impact
+- Too many metrics (analysis paralysis)
+- Ignoring counter-metrics
+- Premature optimization
+- Correlation vs. causation confusion 
